@@ -1,0 +1,35 @@
+.customers {
+  background: var(--main-bright-color);
+}
+
+.customers__container {
+}
+
+.customers__title {
+}
+.customers__list {
+  display: flex;
+  gap: 30px;
+}
+.customers__items {
+}
+.customers__link {
+  display: flex;
+  min-width: 170px;
+  height: 92px;
+  border: 1px solid var(--icon-color);
+  border-radius: 4px;
+  justify-content: center;
+  align-items: center;
+  color: var(--icon-color);
+  transition: border-color var(--transition-hover), color var(--transition-hover);
+
+  &:hover,
+  &:focus {
+    border-color: var(--hover-color);
+    color: var(--hover-color);
+  }
+}
+.customer__icon {
+  fill: currentColor;
+}

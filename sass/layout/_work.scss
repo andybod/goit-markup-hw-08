@@ -1,0 +1,27 @@
+.work {
+}
+.work__title {
+}
+.work__list {
+  display: flex;
+  gap: 30px;
+}
+.commercial__item {
+  position: relative;
+}
+.commercial_img {
+}
+.commercial__text {
+  width: 100%;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(47, 48, 58, 0.8);
+  text-align: center;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--main-bright-color);
+  position: absolute;
+  bottom: 0;
+}

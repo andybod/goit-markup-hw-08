@@ -1,0 +1,27 @@
+.features {
+  padding-bottom: 0;
+}
+.features__list {
+  display: flex;
+  gap: 30px;
+}
+.cards__title {
+  font-size: inherit;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: var(--dakr-color);
+  margin-bottom: 10px;
+}
+.cards__text {
+  line-height: 1.71;
+  color: var(--light-color);
+}
+.cards__icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--bg-section-light);
+  border-radius: 4px;
+  min-height: 120px;
+  margin-bottom: 30px;
+}
