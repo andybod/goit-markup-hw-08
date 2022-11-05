@@ -9,13 +9,21 @@
 }
 .customers__list {
   display: flex;
+  flex-wrap: wrap;
   gap: 30px;
 }
 .customers__items {
+  width: calc((100% - 30px) / 2);
+  @include tablet {
+    width: calc((100% - 60px) / 3);
+  }
+  @include desktop {
+    width: calc((100% - 150px) / 6);
+  }
 }
 .customers__link {
   display: flex;
-  min-width: 170px;
+  max-width: 210px;
   height: 92px;
   border: 1px solid var(--icon-color);
   border-radius: 4px;
@@ -28,6 +36,12 @@
   &:focus {
     border-color: var(--hover-color);
     color: var(--hover-color);
+  }
+  @include tablet {
+    max-width: 226px;
+  }
+  @include desktop {
+    max-width: 170px;
   }
 }
 .customer__icon {

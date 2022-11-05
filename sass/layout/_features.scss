@@ -4,13 +4,27 @@
 .features__list {
   display: flex;
   gap: 30px;
+  flex-wrap: wrap;
+}
+.cards__item {
+  width: 100%;
+  @include tablet {
+    width: calc((100% - 30px) / 2);
+  }
+  @include desktop {
+    width: calc((100% - 90px) / 4);
+  }
 }
 .cards__title {
+  text-align: center;
   font-size: inherit;
   line-height: 1.14;
   text-transform: uppercase;
   color: var(--dakr-color);
   margin-bottom: 10px;
+  @include tablet {
+    text-align: left;
+  }
 }
 .cards__text {
   line-height: 1.71;

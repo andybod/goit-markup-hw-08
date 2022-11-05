@@ -21,7 +21,8 @@
     <title>Document</title>
   </head>
   <body>
-    <header class="header">
+    <!-- --------------------------------Header------------------------- -->
+    <!-- <header class="header">
       <div class="header__container container">
         <a href="./index.html" class="header__logo link logo">Web<span>Studio</span></a>
         <nav class="header__menu menu">
@@ -52,14 +53,16 @@
           >
         </div>
       </div>
-    </header>
+    </header> -->
     <main>
+      <!-- -----------------------------Hero--------------------------- -->
       <section class="hero section">
         <div class="hero__container container">
           <h1 class="hero__title">Ефективні рішення для вашого бізнесу</h1>
           <button type="button" class="hero__button btn" data-modal-open>Замовити послугу</button>
         </div>
       </section>
+      <!-- -----------------------------Features ---------------------- -->
       <section class="features section">
         <div class="features__container container">
           <h2 class="visually-hidden">Особливості</h2>
@@ -111,6 +114,7 @@
           </ul>
         </div>
       </section>
+      <!-- ------------------------------Work---------------------------- -->
       <section class="work section">
         <div class="work__container container">
           <h2 class="work__title title">Чим ми займаємося</h2>
@@ -118,7 +122,8 @@
             <li class="commercial__item item">
               <img
                 class="commercial__img"
-                src="./images/keyboard.jpg"
+                srcset="./images/work/keyboard.jpg 1x, ./images/work/keyboard-2x.jpg 2x"
+                src="./images/work/keyboard.jpg"
                 alt="someone is typing on the keyboard"
                 width="370"
                 height="294"
@@ -128,7 +133,8 @@
             <li class="commercial__item item">
               <img
                 class="commercial__img"
-                src="./images/laptop.jpg"
+                srcset="./images/work/laptop.jpg 1x, ./images/work/laptop-2x.jpg 2x"
+                src="./images/work/laptop.jpg"
                 alt="open laptop and mobile phone in hands"
                 width="370"
                 height="294"
@@ -138,7 +144,8 @@
             <li class="commercial__item item">
               <img
                 class="commercial__img"
-                src="./images/tablet.jpg"
+                srcset="./images/work/tablet.jpg 1x, ./images/work/tablet-2x.jpg 2x"
+                src="./images/work/tablet.jpg"
                 alt="a tablet showing a palette of colors"
                 width="370"
                 height="294"
@@ -148,18 +155,39 @@
           </ul>
         </div>
       </section>
+      <!-- -----------------------------Teams---------------------------- -->
       <section class="teams section">
         <div class="teams__container container">
           <h2 class="teams__title title">Наша команда</h2>
           <ul class="members teams__list">
             <li class="members__item item">
-              <img
-                src="./images/employee1.jpg"
-                alt="photo boy"
-                class="members__img"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="./images/teams/employee1.jpg 1x, ./images/teams/employee1-2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/teams/employee1-tab.jpg    1x,
+                    ./images/teams/employee1-tab-2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/teams/employee1-mob.jpg    1x,
+                    ./images/teams/employee1-mob-2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <img
+                  src="./images/teams/employee1.jpg"
+                  alt="photo boy"
+                  class="members__img"
+                  width="450"
+                />
+              </picture>
+
               <div class="members__content">
                 <h3 class="members__subtitle">Ігор Дем'яненко</h3>
                 <p class="members__text">Product Designer</p>
@@ -196,13 +224,32 @@
               </div>
             </li>
             <li class="members__item item">
-              <img
-                src="./images/employee2.jpg"
-                alt="photo girl"
-                class="members__img"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="./images/teams/employee2.jpg 1x, ./images/teams/employee2-2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/teams/employee2-tab.jpg    1x,
+                    ./images/teams/employee2-tab-2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/teams/employee2-mob.jpg    1x,
+                    ./images/teams/employee2-mob-2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <img
+                  src="./images/teams/employee2.jpg"
+                  alt="photo boy"
+                  class="members__img"
+                  width="450"
+                />
+              </picture>
               <div class="members__content">
                 <h3 class="members__subtitle">Ольга Рєпіна</h3>
                 <p class="members__text">Frontend Developer</p>
@@ -239,13 +286,32 @@
               </div>
             </li>
             <li class="members__item item">
-              <img
-                src="./images/employee3.jpg"
-                alt="photo boy"
-                class="members__img"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="./images/teams/employee3.jpg 1x, ./images/teams/employee3-2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/teams/employee3-tab.jpg    1x,
+                    ./images/teams/employee3-tab-2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/teams/employee3-mob.jpg    1x,
+                    ./images/teams/employee3-mob-2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <img
+                  src="./images/teams/employee3.jpg"
+                  alt="photo boy"
+                  class="members__img"
+                  width="450"
+                />
+              </picture>
               <div class="members__content">
                 <h3 class="members__subtitle">Микола Тарасов</h3>
                 <p class="members__text">Marketing</p>
@@ -282,13 +348,32 @@
               </div>
             </li>
             <li class="members__item item">
-              <img
-                src="./images/employee4.jpg"
-                alt="photo boy"
-                class="members__img"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="./images/teams/employee4.jpg 1x, ./images/teams/employee4-2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/teams/employee4-tab.jpg    1x,
+                    ./images/teams/employee4-tab-2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/teams/employee4-mob.jpg    1x,
+                    ./images/teams/employee4-mob-2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <img
+                  src="./images/teams/employee4.jpg"
+                  alt="photo boy"
+                  class="members__img"
+                  width="450"
+                />
+              </picture>
               <div class="members__content">
                 <h3 class="members__subtitle">Михайло Єрмаков</h3>
                 <p class="members__text">UI Designer</p>
@@ -327,6 +412,7 @@
           </ul>
         </div>
       </section>
+      <!-- -----------------------------Custoomers----------------------- -->
       <section class="customers section">
         <div class="customers__container container">
           <h2 class="customers__title title">Постійні клієнти</h2>
@@ -377,7 +463,8 @@
         </div>
       </section>
     </main>
-    <footer class="footer">
+    <!-- --------------------------------Footer----------------------------- -->
+    <!-- <footer class="footer">
       <div class="footer__container container">
         <div class="footer__content">
           <a href="./index.html" class="footer__logo link logo">Web<span>Studio</span></a>
@@ -455,7 +542,8 @@
           </form>
         </div>
       </div>
-    </footer>
+    </footer> -->
+    <!-- --------------------------------Backdrop----------------------------- -->
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="modal__btn" data-modal-close>
