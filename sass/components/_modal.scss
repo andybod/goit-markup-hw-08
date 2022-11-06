@@ -1,4 +1,5 @@
 .backdrop {
+  //   padding: 94px 15px;
   position: fixed;
   top: 0;
   height: 100%;
@@ -8,8 +9,7 @@
 }
 .modal {
   padding: 40px;
-  width: 528px;
-  height: 581px;
+  width: 100%;
   background: var(--main-bright-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -19,6 +19,14 @@
   top: 50%;
   transform: translate(-50%, -50%) scaleY(1);
   transition: transform var(--transition-hover);
+  @include mobile {
+    width: 450px;
+    height: 609px;
+  }
+  @include desktop {
+    width: 528px;
+    height: 581px;
+  }
 }
 .backdrop.is-hidden .modal {
   transform: translate(-50%, -50%) scaleY(0);
@@ -56,11 +64,15 @@
 .modal__title {
   font-weight: 700;
   font-size: 20px;
-  line-height: 1.15;
+
+  line-height: 1.5;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--dakr-color);
   margin-bottom: 12px;
+  @include desktop {
+    line-height: 1.15;
+  }
 }
 .modal__form {
 }
@@ -116,12 +128,23 @@
 }
 
 .form-modal__check-label {
-  line-height: 1.71;
+  font-size: 10px;
+  line-height: 1.16;
+
   color: var(--light-color);
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 10px;
+  gap: 0;
+  @include mobile {
+    gap: 8px;
+    font-size: 12px;
+  }
+  @include desktop {
+    font-size: 14px;
+    gap: 10px;
+    line-height: 1.71;
+  }
 }
 
 .form-modal__check-label span {
@@ -129,7 +152,7 @@
   height: 15px;
   border: 2px solid var(--dakr-color);
   border-radius: 2px;
-  margin-right: 9px;
+  margin-right: 8px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -143,9 +166,17 @@
   fill: var(--main-bright-color);
 }
 .form-modal__link {
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 10px;
+  line-height: 1.16;
+
   color: var(--hover-color);
+  @include mobile {
+    font-size: 12px;
+  }
+  @include desktop {
+    line-height: 1.71;
+    font-size: 14px;
+  }
 }
 .form-modal__submit {
   margin: 0 auto;
