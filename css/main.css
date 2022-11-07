@@ -1116,9 +1116,23 @@ body {
 /* -------------------------------------Portfolio-filtr------------------------------------------------------- */
 .portfolio__filtr {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
   gap: 8px;
+  row-gap: 15px;
   margin-bottom: 50px;
+}
+@media screen and (min-width: 768px) {
+  .portfolio__filtr {
+    justify-content: center;
+    margin-bottom: 30px;
+    row-gap: 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .portfolio__filtr {
+    margin-bottom: 54px;
+  }
 }
 
 .filtr-portfolio__btn {
@@ -1150,7 +1164,17 @@ body {
 }
 
 .gellery-portfolio__item {
-  flex-basis: calc((100% - 60px) / 3);
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .gellery-portfolio__item {
+    flex-basis: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .gellery-portfolio__item {
+    flex-basis: calc((100% - 60px) / 3);
+  }
 }
 
 .gallery-portfolio__link {
@@ -1167,6 +1191,17 @@ body {
 
 .gellery-portfolio__image {
   width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .gellery-portfolio__item:first-child .gellery-portfolio__contant {
+    padding-bottom: 56px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .gellery-portfolio__item:first-child .gellery-portfolio__contant {
+    padding-bottom: 20px;
+  }
 }
 
 .gellery-portfolio__contant {
@@ -1197,10 +1232,10 @@ body {
 
 .gallery-portfolio__wrapper-text {
   position: absolute;
-  font-size: 18px;
+  font-size: 12px;
   line-height: 1.56;
   letter-spacing: 0.03em;
-  padding: 63px 24px 0 24px;
+  padding: 65px 24px 65px 24px;
   height: 100%;
   left: 0;
   top: 0;
@@ -1208,4 +1243,15 @@ body {
   color: var(--main-bright-color);
   transform: translateY(101%);
   transition: transform var(--transition-hover);
+}
+@media screen and (min-width: 480px) {
+  .gallery-portfolio__wrapper-text {
+    font-size: 18px;
+    padding: 77px 24px 77px 24px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .gallery-portfolio__wrapper-text {
+    padding: 63px 24px 0 24px;
+  }
 }/*# sourceMappingURL=main.css.map */
