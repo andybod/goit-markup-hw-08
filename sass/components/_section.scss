@@ -1,10 +1,9 @@
 .section {
   //   padding: 84px 0;
-  padding-top: 84px;
-  padding-bottom: 84px;
-  @include tablet {
-    padding: 60px 0;
-  }
+  padding: 60px 0;
+  //   @include tablet {
+  //     padding: 60px 0;
+  //   }
   @include desktop {
     padding: 94px 0;
   }

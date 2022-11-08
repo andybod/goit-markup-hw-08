@@ -6,6 +6,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   max-width: 1600px;
+  height: 400px;
   margin: 0 auto;
   @include retina {
     background-image: var(--bg-gradient), url(../images/hero-bg-mob-x2.jpg);
